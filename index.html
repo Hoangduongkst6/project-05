@@ -37,6 +37,8 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
 
+    <!-- Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -113,7 +115,7 @@
         <section class="hero">
             <div class="container">
                 <div class="hero__body">
-                    <section class="hero__left">
+                    <section data-aos="fade-right" class="hero__left">
                         <span class="title">Digital Smart Wallet</span>
                         <h1 class="hero__left-heading heading">Digital <strong
                                 class="hero__left-strong">Payment</strong>
@@ -131,15 +133,17 @@
                         <span class="hero__none">*We’ll respect the inbox and never share your email.</span>
                     </section>
                     <div class="hero__right">
-                        <div class="hero__down">
+                        <div data-aos="fade-up" data-aos-duration="3000" class="hero__down">
                             <img src="./assets/image/hero-01.svg" alt="" class="hero__down-img">
                             <span class="hero__down-deposit">Deposite</span>
                             <div class="hero__down-money">$32000</div>
                         </div>
                         <figure class="hero__mobile">
-                            <img class="hero__mobile-img" src="./assets/image/hero-02.png" alt="Hero mobile">
+                            <img data-aos="fade-up" class="hero__mobile-img" src="./assets/image/hero-02.png"
+                                alt="Hero mobile">
                         </figure>
-                        <div class="hero__rectangle">
+                        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"
+                            class="hero__rectangle">
                             <img src="./assets/image/hero-03.svg" class="hero__rectangle-img">
                             <div class="hero__rectangle-box">
                                 <div class="hero__rectangle-money">$1.310</div>
@@ -147,7 +151,8 @@
                             </div>
                         </div>
 
-                        <div class="hero__circle">
+                        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                            class="hero__circle">
                             <div class="hero__circle-percent">0%</div>
                             <div class="hero__circle-interest">Interest</div>
                         </div>
@@ -168,9 +173,11 @@
                                     d="M30 546H440C456.569 546 470 532.569 470 516V88.3968C470 75.5937 461.875 64.2015 449.77 60.0321L282.951 2.57549C271.409 -1.39988 258.593 2.26418 247.853 8.06671C202.721 32.4499 100.198 39.0854 30.8169 39.3354C13.9297 39.3963 0 52.9379 0 69.8252V516C0 532.569 13.4315 546 30 546Z"
                                     fill="currentColor" />
                             </svg>
-                            <img src="./assets/image/products-02.png" alt="" class="products__success-img">
-                            <svg class="products__success-icon" width="64" height="64" viewBox="0 0 64 64" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <img src="./assets/image/products-02.png" alt="" data-aos="fade-up"
+                                class="products__success-img">
+                            <svg data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
+                                data-aos-offset="0" class="products__success-icon" width="64" height="64"
+                                viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="64" height="64" rx="8" fill="#7264D6" />
                                 <rect x="12" y="12" width="40" height="40" rx="4" fill="currentColor" />
                                 <path
@@ -186,7 +193,7 @@
                                     fill="#7264D6" />
                             </svg>
 
-                            <div class="products__rectangle">
+                            <div data-aos="fade-up" data-aos-duration="3000" class="products__rectangle">
                                 <img src="./assets/image/products-03.png" alt="" class="products__rectangle-img">
                                 <div class="products__box">
                                     <div class="products__box-heading">Congratulations</div>
@@ -195,7 +202,7 @@
                             </div>
                         </figure>
                     </div>
-                    <section class="products__right">
+                    <section class="products__right" data-aos="fade-left">
                         <div class="title">Digital Smart Wallet</div>
                         <h2 class="products__heading heading">How It Works</h2>
                         <div class="products__list">
@@ -229,7 +236,7 @@
         <section id="features" class="feature">
             <div class="container">
                 <div class="feature__body">
-                    <section class="feature__left">
+                    <section data-aos="fade-right" class="feature__left">
                         <span class="title">Digital Smart Wallet</span>
                         <h2 class="feature__heading heading">One Card For All Your Payments</h2>
                         <p class="desc feature__desc">We bring together eveything that’s required to build websites and
@@ -249,8 +256,10 @@
                         <a href="#!" class="btn feature__cta">Get Started</a>
                     </section>
                     <figure class="feature__right">
-                        <img src="./assets/image/feature-01.png" alt="Feature img" class="feature__img">
-                        <div class="feature__rectangle">
+                        <img data-aos="fade-up" src="./assets/image/feature-01.png" alt="Feature img"
+                            class="feature__img">
+                        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"
+                            class="feature__rectangle">
                             <div class="feature__rectangle-box">
                                 <img src="./assets/image/feature-02.png" alt="Feature icon"
                                     class="feature__rectangle-icon">
@@ -264,7 +273,7 @@
                                 <div class="feature__rectangle-month">Sep 23</div>
                             </div>
                         </div>
-                        <div class="feature__square">
+                        <div data-aos="fade-up" data-aos-duration="3000" class="feature__square">
                             <div class="feature__square-box">
                                 <img class="feature__square-icon" src="./assets/image/feature-03.png"
                                     alt="Feature icon">
@@ -289,10 +298,11 @@
                                     d="M462 431H8C3.58172 431 0 427.418 0 423V98.4538C0 94.6334 2.7012 91.3462 6.44906 90.6056L460.449 0.887429C465.394 -0.0898376 470 3.69476 470 8.73565V423C470 427.418 466.418 431 462 431Z"
                                     fill="currentColor" />
                             </svg>
-                            <img class="feature-02__images-img" src="./assets/image/feature-02-1.png"
+                            <img data-aos="fade-up" class="feature-02__images-img" src="./assets/image/feature-02-1.png"
                                 alt="Feature-02 img">
                         </figure>
-                        <div class="feature-02__images-icon">
+                        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                            class="feature-02__images-icon">
                             <svg width="42" height="24" viewBox="0 0 42 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -300,7 +310,7 @@
                                     fill="currentColor" />
                             </svg>
                         </div>
-                        <div class="feature-02__cart">
+                        <div data-aos="fade-up" data-aos-duration="3000" class="feature-02__cart">
                             <div class="feature-02__cart-heading">Choose payment method:</div>
                             <div class="feature-02__cart-body">
                                 <div class="feature-02__cart-icon">
@@ -489,7 +499,7 @@
                             </div>
                         </div>
                     </div>
-                    <section class="feature-02__right">
+                    <section data-aos="fade-left" class="feature-02__right">
                         <span class="title">Digital Smart Wallet</span>
                         <h2 class="feature__heading heading">Transfer and Deposite Your Money Anytime</h2>
                         <p class="desc feature__desc">We bring together eveything that’s required to build websites and
@@ -525,7 +535,7 @@
                 </div>
                 <div class="testimonial__body">
                     <div class="testimonial__left">
-                        <div class="testimonial__rectangle">
+                        <div data-aos="zoom-in-down" class="testimonial__rectangle">
                             <p class="testimonial__rectangle-comment">Fantastic platform for online banking. The best
                                 online banking platform I have used. Payments, loans, and money transfers have never
                                 been so much easier before. I am very much happy about this great online bank.</p>
@@ -540,7 +550,7 @@
                         </div>
                     </div>
                     <div class="testimonial__right">
-                        <div class="testimonial__rectangle">
+                        <div data-aos="zoom-in-down" class="testimonial__rectangle">
                             <p class="testimonial__rectangle-comment">Fantastic platform for online banking. The best
                                 online banking platform I have used. Payments, loans, and money transfers have never
                                 been so much easier before. I am very much happy about this great online bank.</p>
@@ -580,7 +590,7 @@
 
                 <div class="blog__body">
                     <div class="blog__list">
-                        <div class="blog__item">
+                        <div data-aos="fade-up" data-aos-duration="3000" class="blog__item">
                             <figure class="blog__item-images">
                                 <img src="./assets/image/blog-01.png" alt="" class="blog__img">
                             </figure>
@@ -591,7 +601,7 @@
                                 <a href="#!" class="blog__box-read">Read Blog</a>
                             </div>
                         </div>
-                        <div class="blog__item">
+                        <div data-aos="fade-up" data-aos-duration="3000" class="blog__item">
                             <figure class="blog__item-images">
                                 <img src="./assets/image/blog-02.png" alt="Blog img" class="blog__img">
                             </figure>
@@ -604,7 +614,7 @@
                         </div>
                     </div>
                     <div class="blog__list">
-                        <div class="blog__item">
+                        <div data-aos="fade-up" data-aos-duration="3000" class="blog__item">
                             <figure class="blog__item-images">
                                 <img src="./assets/image/blog-03.png" alt="" class="blog__img">
                             </figure>
@@ -615,7 +625,7 @@
                                 <a href="#!" class="blog__box-read">Read Blog</a>
                             </div>
                         </div>
-                        <div class="blog__item">
+                        <div data-aos="fade-up" data-aos-duration="3000" class="blog__item">
                             <figure class="blog__item-images">
                                 <img src="./assets/image/blog-04.png" alt="Blog img" class="blog__img">
                             </figure>
@@ -635,8 +645,10 @@
         <section class="download">
             <div class="container">
                 <div class="download__body">
-                    <img class="download__body-img-01" src="./assets/image/download-01.png" alt="">
-                    <img class="download__body-img-02" src="./assets/image/download-01.png" alt="">
+                    <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                        class="download__body-img-01" src="./assets/image/download-01.png" alt="">
+                    <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                        class="download__body-img-02" src="./assets/image/download-01.png" alt="">
                     <div class="download__center">
                         <div class="download__title title">Our App</div>
                         <h2 class="download__heading heading">Download the Apps</h2>
@@ -776,15 +788,17 @@
                             </div>
                         </div>
                     </div>
-                    <img class="download__body-img-03" src="./assets/image/download-01.png" alt="">
-                    <img class="download__body-img-04" src="./assets/image/download-01.png" alt="">
+                    <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                        class="download__body-img-03" src="./assets/image/download-01.png" alt="">
+                    <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                        class="download__body-img-04" src="./assets/image/download-01.png" alt="">
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <section class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer__list">
                 <div class="footer__item">
@@ -865,7 +879,12 @@
             </div>
         </div>
         <div class="footer__line">© 2020 Ligft Media All rights reserved.</div>
-    </section>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 
 </html>
