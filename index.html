@@ -47,6 +47,48 @@
         <div class="container">
             <!-- Menu section -->
             <section class="menu">
+
+                <input type="checkbox" hidden name="" class="bars__input" id="bars__checkbox">
+
+                <!-- Bars -->
+                <label for="bars__checkbox" class="bars">
+                    <svg class="bars__open" xmlns="http://www.w3.org/2000/svg" height="28" width="26"
+                        viewBox="0 0 448 512">
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                    <svg class="bars__close" xmlns="http://www.w3.org/2000/svg" height="28" width="26"
+                        viewBox="0 0 384 512">
+                        <path
+                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                    </svg>
+                </label>
+
+                <!-- Drawer Tablet Mobile -->
+                <div class="drawer">
+                    <ul class="drawer__nav-list">
+                        <li class="drawer__nav-item">
+                            <a style="--delay: 0" href="#" class="drawer__nav-item-link">Home</a>
+                        </li>
+                        <li class="drawer__nav-item">
+                            <a style="--delay: 1" href="#products" class="drawer__nav-item-link">Products</a>
+                        </li>
+                        <li class="drawer__nav-item">
+                            <a style="--delay: 2" href="#features" class="drawer__nav-item-link">Features</a>
+                        </li>
+                        <li class="drawer__nav-item">
+                            <a style="--delay: 3" href="#blog" class="drawer__nav-item-link">Blog</a>
+                        </li>
+                        <li class="drawer__nav-item">
+                            <a style="--delay: 4" href="#!" class="drawer__nav-item-link">Sign in</a>
+                        </li>
+                        <li class="drawer__nav-item">
+                            <a style="--delay: 5" href="#!" class="drawer__nav-item-link">Sign up</a>
+                        </li>
+                    </ul>
+                </div>
+
+
                 <!-- Logo -->
                 <a href="#" class="logo">
                     <svg width="103" height="24" viewBox="0 0 103 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,8 +128,9 @@
                     </svg>
 
                 </a>
+
                 <!-- Navigation bar -->
-                <ul class="nav__list">
+                <ul class="nav__list remove-mobile-tablet">
                     <li class="nav__item">
                         <a href="#" class="nav__link">Home</a>
                     </li>
@@ -101,7 +144,7 @@
                         <a href="#blog" class="nav__link">Blog</a>
                     </li>
                 </ul>
-                <div class="action">
+                <div class="action remove-mobile-tablet">
                     <a href="#!" class="action__signin">Sign in</a>
                     <a href="#!" class="action__signup btn">Sign up</a>
                 </div>
@@ -499,7 +542,7 @@
                             </div>
                         </div>
                     </div>
-                    <section data-aos="fade-left" class="feature-02__right">
+                    <section class="feature-02__right" data-aos="fade-left">
                         <span class="title">Digital Smart Wallet</span>
                         <h2 class="feature__heading heading">Transfer and Deposite Your Money Anytime</h2>
                         <p class="desc feature__desc">We bring together eveything that’s required to build websites and
@@ -646,9 +689,9 @@
             <div class="container">
                 <div class="download__body">
                     <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
-                        class="download__body-img-01" src="./assets/image/download-01.png" alt="">
+                        class="download__body-img download__body-img-01" src="./assets/image/download-01.png" alt="">
                     <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
-                        class="download__body-img-02" src="./assets/image/download-01.png" alt="">
+                        class="download__body-img download__body-img-02" src="./assets/image/download-01.png" alt="">
                     <div class="download__center">
                         <div class="download__title title">Our App</div>
                         <h2 class="download__heading heading">Download the Apps</h2>
@@ -789,9 +832,9 @@
                         </div>
                     </div>
                     <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
-                        class="download__body-img-03" src="./assets/image/download-01.png" alt="">
+                        class="download__body-img download__body-img-03" src="./assets/image/download-01.png" alt="">
                     <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
-                        class="download__body-img-04" src="./assets/image/download-01.png" alt="">
+                        class="download__body-img download__body-img-04" src="./assets/image/download-01.png" alt="">
                 </div>
             </div>
         </section>
